@@ -5,7 +5,7 @@ import 'react-google-address-autocomplete/dist/index.css'
 
 const App = () => {
   return <GoogleAddressAutocomplete
-    apikey='AIzaSyAVrlUa2e0KvXTd-Cr0aWJpp4EyUKRQv0k'
+    apikey='AIzaSyA15J1FkkLtCM6Z4wXcOIplOLmUnkfLaes'
     placeselected={(place) => console.log("Parent place", place)}
   />
 };

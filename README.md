@@ -13,17 +13,20 @@ npm install --save react-google-address-autocomplete
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
-
-import MyComponent from 'react-google-address-autocomplete'
-import 'react-google-address-autocomplete/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+<GoogleAddressAutocomplete
+    apikey='AIzaSyA15J1FkkLtCM6Z4wXcOIplOLmUnkfLaes'
+    placeselected={(place) => {
+      if(place){
+        alert("You selected: " + place.formatted_address)
+      }
+    }
+    }
+  />
 ```
+
+## Live Example
+
+https://mikebski.github.io/react-google-address-autocomplete/
 
 ## License
 
